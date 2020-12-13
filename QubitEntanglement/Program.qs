@@ -27,6 +27,10 @@ namespace QubitEntanglement {
                 if (M(q0) == One) {
                     set numOnes += 1;
                 }
+
+                Message($"{M(q0)}");
+                X(q0);
+                Message($"{M(q0)}");
             }
 
             SetQubitState(Zero, q0);
